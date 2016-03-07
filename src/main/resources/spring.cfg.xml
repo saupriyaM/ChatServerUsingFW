@@ -8,18 +8,21 @@
           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd"
 >
 
-<bean id="ss1" class="java.net.ServerSocket">
+<bean id="applicationContextUtils" class="com.jf.chatserver.core.ApplicationContextUtils"></bean>
+
+<bean id="socketConnection" class="com.jf.chatserver.core.SocketConnection" lazy-init="true">
+	<constructor-arg ref="ss"/>
+</bean>
+
+<bean id="ss" class="java.net.ServerSocket" scope="prototype" lazy-init="true">
 	<constructor-arg value="#{T(com.jf.chatserver.core.Counter).getCount() + portList[0].port}" type="int"/>
+</bean>
+
+<bean id="ssloader" class="com.jf.chatserver.core.ServerSocketLoader" scope="singleton">
 </bean>
 
 <util:list id="portList"> 
        <bean class="com.jf.chatserver.core.Port" p:port="9080" />
 </util:list>
 
-
-<util:list id="helper">
-    <bean id="chatserver1" class="com.jf.chatserver.core.ChatServer">
-    	<constructor-arg ref="ss1"/>
-    </bean>
-</util:list>
 </beans>
