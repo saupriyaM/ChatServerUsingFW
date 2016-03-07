@@ -1,0 +1,120 @@
+02-29 18:07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERPROFILE_EMAILIDS" not found; SQL statement:
+alter table UserProfile_emailIds drop constraint FKCA37C15D2778C150 [42102-176]
+02-29 18:07:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Sequence "HIBERNATE_SEQUENCE" not found; SQL statement:
+drop sequence hibernate_sequence [90036-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.command.ddl.DropSequence.update(DropSequence.java:46)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:79)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:132)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:117)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:64)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.perform(SchemaExport.java:418)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:372)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:490)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1741)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1779)
+	at com.jf.chatserver.main.TestUserProfile.main(TestUserProfile.java:19)
+02-29 18:30:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_PROFILE_EMAILIDS" not found; SQL statement:
+select * from USER_PROFILE_EMAILIDS [42102-176]
+02-29 18:38:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Constraint "FKCEC2A515B30AC8EF" not found; SQL statement:
+alter table USER_PROFILE drop constraint FKCEC2A515B30AC8EF [90057-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:42)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:79)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:132)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:117)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:64)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.perform(SchemaExport.java:418)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:372)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:490)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1741)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1779)
+	at com.jf.chatserver.main.TestUserProfile.main(TestUserProfile.java:19)
+02-29 18:39:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Constraint "FKCA37C15D2778C150" not found; SQL statement:
+alter table UserProfile_emailIds drop constraint FKCA37C15D2778C150 [90057-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:42)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:79)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:132)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:117)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:64)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.perform(SchemaExport.java:418)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:372)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:490)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1741)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1779)
+	at com.jf.chatserver.main.TestUserProfile.main(TestUserProfile.java:19)
+02-29 18:41:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USER_EMAILS" not found; SQL statement:
+alter table USER_EMAILS drop constraint FKFBDB6B4BB8CD0770 [42102-176]
+02-29 18:43:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Constraint "FKFBDB6B4BAA45A9E3" not found; SQL statement:
+alter table USER_EMAILS drop constraint FKFBDB6B4BAA45A9E3 [90057-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	at org.h2.message.DbException.get(DbException.java:178)
+	at org.h2.message.DbException.get(DbException.java:154)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:42)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:79)
+	at org.h2.command.Command.executeUpdate(Command.java:254)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:132)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:117)
+	at org.hibernate.tool.hbm2ddl.DatabaseExporter.export(DatabaseExporter.java:64)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.perform(SchemaExport.java:418)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.execute(SchemaExport.java:372)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:304)
+	at org.hibernate.tool.hbm2ddl.SchemaExport.create(SchemaExport.java:293)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:490)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1741)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1779)
+	at com.jf.chatserver.main.TestUserProfile.main(TestUserProfile.java:19)
+02-29 18:44:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "USERPROFILE_EMAILDS" not found; SQL statement:
+drop table USERPROFILE_EMAILDS [42102-176]
+02-29 18:48:36 database: close
+org.h2.message.DbException: IO Exception: "java.io.EOFException"; "D:/Supriya/Frameworks/github_workspace/ChatServer/chatserver_db.h2.db" [90031-176]
+	at org.h2.message.DbException.get(DbException.java:167)
+	at org.h2.message.DbException.convertIOException(DbException.java:329)
+	at org.h2.store.FileStore.readFully(FileStore.java:276)
+	at org.h2.store.PageStore.readPage(PageStore.java:1326)
+	at org.h2.store.PageStore.getPage(PageStore.java:750)
+	at org.h2.store.PageStreamTrunk$Iterator.next(PageStreamTrunk.java:252)
+	at org.h2.store.PageLog.free(PageLog.java:214)
+	at org.h2.store.PageStore.compact(PageStore.java:499)
+	at org.h2.engine.Database.closeOpenFilesAndUnlock(Database.java:1301)
+	at org.h2.engine.Database.close(Database.java:1251)
+	at org.h2.engine.Database.removeSession(Database.java:1122)
+	at org.h2.engine.Session.close(Session.java:672)
+	at org.h2.jdbc.JdbcConnection.close(JdbcConnection.java:383)
+	at org.h2.server.web.WebApp.logout(WebApp.java:984)
+	at org.h2.server.web.WebApp.process(WebApp.java:216)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:171)
+	at org.h2.server.web.WebThread.process(WebThread.java:138)
+	at org.h2.server.web.WebThread.run(WebThread.java:94)
+	at java.lang.Thread.run(Thread.java:722)
+Caused by: org.h2.jdbc.JdbcSQLException: IO Exception: "java.io.EOFException"; "D:/Supriya/Frameworks/github_workspace/ChatServer/chatserver_db.h2.db" [90031-176]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:344)
+	... 19 more
+Caused by: java.io.EOFException
+	at org.h2.store.fs.FileUtils.readFully(FileUtils.java:347)
+	at org.h2.store.FileStore.readFully(FileStore.java:274)
+	... 16 more
